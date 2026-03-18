@@ -1,0 +1,19 @@
+def word_count(sentence):
+    return len(sentence.split())
+
+Given a string sentence, return an integer representing the total number of words in the string.
+
+A word is defined as any sequence of characters separated by spaces.
+
+Examples
+Input: sentence = "University of Puerto Rico"
+Output: 4
+Explanation: There are four distinct words separated by spaces.
+Input: sentence = "Hello"
+Output: 1
+Input: sentence = ""
+Output: 0
+Explanation: An empty string contains zero words.
+Constraints & Rules
+Hint: Use the built-in string method .split() to separate the string into a list of individual words.
+Once you have a list of words, you can use the len() function to determine how many elements are in that list.
