@@ -1,0 +1,28 @@
+def count_case(words):
+    upper = 0
+    lower = 0
+    for word in words:
+        for char in word:
+            if char.isupper():
+                upper += 1
+            elif char.islower():
+                lower += 1
+    return [upper, lower]
+
+Given a list of strings words, return a list containing exactly two integers: the total number of uppercase letters, and the total number of lowercase letters across all words in the list.
+
+The returned list should be formatted exactly like this: [uppercase_count, lowercase_count].
+
+Examples
+Input: words = ["Hello", "World"]
+Output: [2, 8]
+Explanation: There are 2 capitalized letters ('H', 'W') and 8 lowercase letters ('e', 'l', 'l', 'o', 'o', 'r', 'l', 'd').
+Input: words = ["PYTHON", "is", "fun"]
+Output: [6, 5]
+Input: words = [""]
+Output: [0, 0]
+Constraints & Rules
+words is a list of strings.
+Hint 1: You can use a nested loop to first iterate through each word in the list, and then iterate through each letter in that word.
+Hint 2: Use the built-in string methods .isupper() and .islower() to check the case of each letter.
+Hint 3: When in doubt, search the official Python documentation for help with string methods.
