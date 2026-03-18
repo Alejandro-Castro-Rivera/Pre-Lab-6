@@ -1,0 +1,24 @@
+def format_string(s):
+    result = ""
+    for i in range(len(s)):
+        if i % 2 == 0:
+            result += s[i].upper()
+        else:
+            result += s[i].lower()
+    return result
+
+Given a string s consisting of letters, return a new string where every even-indexed letter is converted to uppercase and every odd-indexed letter is converted to lowercase.
+
+Examples
+Input: s = "hello"
+Output: "HeLlO"
+Input: s = "Python"
+Output: "PyThOn"
+Input: s = "aBcDeF"
+Output: "AbCdEf"
+Input: s = ""
+Output: ""
+Constraints & Rules
+s will consist only of alphabetical characters.
+Remember: Strings in Python are zero-indexed, meaning the first letter is at index 0 (which is an even number).
+Hint: Use the built-in string methods .upper() and .lower() to change the case of individual letters.
