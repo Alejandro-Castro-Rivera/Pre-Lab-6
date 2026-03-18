@@ -1,0 +1,25 @@
+def reverse_list(lst):
+    while len(lst) == 0:
+        return []
+    lst.insert(0, lst.pop())
+    lst.insert(1, lst.pop())
+    lst.insert(2, lst.pop())
+    return lst
+
+Given a list of integers lst, return a new list that contains the elements of lst in reverse order.
+
+You must create a new list and use a loop to reverse the elements. Do not modify the original list directly.
+
+Examples
+Input: lst = [1, 2, 3, 4]
+Output: [4, 3, 2, 1]
+Explanation: The array elements are reversed from last to first.
+Input: lst = [5, 10, 15]
+Output: [15, 10, 5]
+Input: lst = []
+Output: []
+Explanation: An empty list reversed is still an empty list.
+Constraints & Rules
+lst will only contain integers.
+Mandatory: You must use a for or while loop to implement your solution.
+Forbidden: Do not use Python's built-in .reverse() method, the reversed() function, or list slicing (e.g., lst[::-1]).
