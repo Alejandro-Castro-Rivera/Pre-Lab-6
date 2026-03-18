@@ -1,0 +1,27 @@
+def contains_duplicates(nums):
+    for num in nums:
+        if nums.count(num) > 2:
+            return True
+    return False
+
+Given a list of integers nums, return a boolean value (True or False):
+
+True if there are any duplicate values in the list.
+False if all the values in the list are unique.
+Examples
+Input: nums = [1, 2, 3, 4, 5]
+Output: False
+Explanation: No duplicates.
+Input: nums = [1, 2, 3, 4, 5, 3]
+Output: True
+Explanation: 3 appears twice.
+Input: nums = [30, 20, 20, 30, 40]
+Output: True
+Explanation: 30 and 20 appear twice.
+Input: nums = []
+Output: False
+Explanation: No duplicates.
+Constraints & Rules
+nums will contain integers.
+Hint 1: You can use a nested loop to compare each number with the others in the list.
+Hint 2: Try to make your code finish (return) as soon as it finds the first duplicate to improve efficiency.
